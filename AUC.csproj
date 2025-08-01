@@ -6,9 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-AUC-1691051d-642c-4e63-89e7-3d725892b1d7</UserSecretsId>
 
-	  <Version>2.0.0</Version>
-	  <FileVersion>2.0.0.0</FileVersion>
-	  <AssemblyVersion>2.0.0.0</AssemblyVersion>
+	  <Version>2.0.1</Version>
+	  <FileVersion>2.0.1.0</FileVersion>
+	  <AssemblyVersion>2.0.1.0</AssemblyVersion>
 	  <Authors>Elmin Alirzayev</Authors>
 	  <Company>Easy Code Tools</Company>
 	  <Product>auc-automaticly-usb-copier</Product>
