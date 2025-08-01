@@ -41,7 +41,7 @@ A background Windows service that automatically copies files from USB drives to 
 
 ## License
 
-MIT License
+MIT License 
 
 ---
 
