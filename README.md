@@ -45,4 +45,4 @@ MIT License
 
 ---
 
-© 2017 Elmin Alirzayev / Easy Code Tools
+© 2017 Elmin Alirzayev / Easy Code Tools 
