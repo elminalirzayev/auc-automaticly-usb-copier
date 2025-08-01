@@ -1,9 +1,9 @@
-name: Build and Release
+name: Build & Release
 
 on:
   push:
     tags:
-      - 'v*.*.*'  
+      - 'v*.*.*'
 
 jobs:
   build:
@@ -21,12 +21,26 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: Build project
-      run: dotnet publish -c Release -r win-x64 --self-contained true -o output
+    # Build: Self-contained
+    - name: Publish Self-Contained
+      run: dotnet publish -c Release -r win-x64 --self-contained true -o publish/self-contained
 
+    # Build: Framework-dependent
+    - name: Publish Framework-Dependent
+      run: dotnet publish -c Release -r win-x64 --self-contained false -o publish/framework-dependent
+
+    # Zip both outputs
+    - name: Archive builds
+      run: |
+        Compress-Archive -Path publish/self-contained/* -DestinationPath auc-self-contained.zip
+        Compress-Archive -Path publish/framework-dependent/* -DestinationPath auc-framework-dependent.zip
+
+    # Create GitHub Release and upload zips
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
-        files: output/**
+        files: |
+          auc-self-contained.zip
+          auc-framework-dependent.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
