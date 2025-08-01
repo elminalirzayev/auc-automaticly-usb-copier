@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using AUC;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-namespace usb_listener
+var builder = Host.CreateDefaultBuilder(args);
+
+#if DEBUG
+builder.ConfigureServices(services =>
 {
-    static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AUC());
-        }
-    }
-}
+    services.AddHostedService<Worker>();
+});
+#else
+builder.UseWindowsService()
+       .ConfigureServices(services =>
+       {
+           services.AddHostedService<Worker>();
+       });
+#endif
+
+builder.Build().Run();
