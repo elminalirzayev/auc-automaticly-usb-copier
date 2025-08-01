@@ -1,3 +1,8 @@
+[![Build & Test](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/build.yml/badge.svg)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/build.yml)
+[![Build & Release](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/release.yml/badge.svg)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/release.yml)
+![Release](https://img.shields.io/github/v/release/elminalirzayev/auc-automaticly-usb-copier)
+![License](https://img.shields.io/github/license/elminalirzayev/auc-automaticly-usb-copier)
+
 # auc-automaticly-usb-copier
 
 A background Windows service that automatically copies files from USB drives to `C:\auc-backup` as soon as they are connected.
@@ -46,7 +51,3 @@ MIT License
 ---
 
 © 2017 Elmin Alirzayev / Easy Code Tools 
-
----
-[![Build & Test](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/build.yml/badge.svg)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/build.yml)
-[![Build & Release](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/release.yml/badge.svg)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/release.yml)
