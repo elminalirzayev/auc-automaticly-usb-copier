@@ -1,7 +1,7 @@
 [![Build & Test](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/build.yml/badge.svg)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/build.yml)
 [![Build & Release](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/release.yml/badge.svg)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/release.yml)
 [![Release](https://img.shields.io/github/v/release/elminalirzayev/auc-automaticly-usb-copier)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/releases)
-[![License](https://img.shields.io/github/license/elminalirzayev/auc-automaticly-usb-copier)](LICENSE)
+[![License](https://img.shields.io/github/license/elminalirzayev/auc-automaticly-usb-copier)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/blob/master/LICENSE.txt)
 
 # auc-automaticly-usb-copier
 
