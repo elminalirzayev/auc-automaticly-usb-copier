@@ -46,3 +46,7 @@ MIT License
 ---
 
 © 2017 Elmin Alirzayev / Easy Code Tools 
+
+---
+[![Build & Test](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/build.yml/badge.svg)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/build.yml)
+[![Build & Release](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/release.yml/badge.svg)](https://github.com/elminalirzayev/auc-automaticly-usb-copier/actions/workflows/release.yml)
